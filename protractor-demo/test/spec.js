@@ -1,6 +1,6 @@
 describe('slow calculator', function() {
   beforeEach(function() {
-    browser.get('http://localhost:3456');
+    browser.get('http://juliemr.github.io/protractor-demo/');
   });
 
   it('should add numbers', function() {
