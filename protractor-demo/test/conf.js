@@ -6,6 +6,7 @@ exports.config = {
 
   specs: [
     '${bamboo_inject_var1}'
+    'testing'
   ],
 
   capabilities: {
