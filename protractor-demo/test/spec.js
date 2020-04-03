@@ -19,6 +19,8 @@ describe('slow calculator', function() {
       first = element(by.model('first'));
       second = element(by.model('second'));
       goButton = element(by.id('gobutton'));
+      console.log("Testing Testing 123");
+      console.log("Testing Testing 123");
     });
 
     it('should start out with an empty memory', function () {

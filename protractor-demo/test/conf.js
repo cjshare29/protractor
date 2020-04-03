@@ -5,7 +5,7 @@ exports.config = {
   framework: 'jasmine2',
 
   specs: [
-    'spec.js'
+    '${bamboo_inject_var1}'
   ],
 
   capabilities: {
