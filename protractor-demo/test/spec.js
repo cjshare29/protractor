@@ -19,7 +19,7 @@ describe('slow calculator', function() {
       first = element(by.model('first'));
       second = element(by.model('second'));
       goButton = element(by.id('gobutton'));
-      console.log("BLAH BLAH DIDLY");
+      console.log("YOUL");
     });
 
     it('should start out with an empty memory', function () {
