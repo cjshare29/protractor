@@ -16,6 +16,9 @@ var ScreenshotAndStackReporter = new HtmlScreenshotReporter({
     captureOnlyFailedSpecs: true,
 });
 
+var JSONReporter = require('jasmine-bamboo-reporter');
+var fs = require('fs');
+
 // Tests for the calculator.
 exports.config = {
 //  directConnect: false,
@@ -32,9 +35,22 @@ exports.config = {
       return new Promise(function (resolve) {
           ScreenshotAndStackReporter.beforeLaunch(resolve);
       });
+
+        if (fs.existsSync('jasmine-results.json.lock')) {
+              fs.unlinkSync('jasmine-results.json.lock');
+            }
+            if (fs.existsSync('jasmine-results.json')) {
+              fs.unlink('jasmine-results.json');
+            }
   },
 
   onPrepare: function () {
+
+      jasmine.getEnv().addReporter(new JSONReporter({
+          file: 'jasmine-results.json', // by default it writes to jasmine.json
+          beautify: true,
+          indentationLevel: 4 // used if beautify === true
+      }));
 
       jasmine.getEnv().addReporter(new SpecReporter({
               displayStacktrace: 'all',      // display stacktrace for each failed assertion, values: (all|specs|summary|none)
