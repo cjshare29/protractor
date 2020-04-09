@@ -22,7 +22,7 @@ var fs = require('fs');
 // Tests for the calculator.
 exports.config = {
   directConnect: false,
-  'seleniumAddress': 'http://192.168.1.47:4444/wd/hub',
+//  'seleniumAddress': 'http://192.168.1.47:4444/wd/hub',
 
   specs: [
     'spec.js',
@@ -149,7 +149,7 @@ exports.config = {
     'goog:chromeOptions':{
         args: ["--headless", "--disable-gpu", "--window-size=800x600", "product-version"]
         },
-    'browserVersion': '80.0',
+//    'browserVersion': '80.0',
     'maxInstances': '2',
     shardTestFiles: '2',
     },
