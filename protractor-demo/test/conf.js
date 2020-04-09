@@ -21,8 +21,8 @@ var fs = require('fs');
 
 // Tests for the calculator.
 exports.config = {
-//  directConnect: false,
-//  'seleniumAddress': 'http://192.168.1.47:4444/wd/hub',
+  directConnect: false,
+  'seleniumAddress': 'http://192.168.1.47:4444/wd/hub',
 
   specs: [
     'spec.js',
