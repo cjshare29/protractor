@@ -1,6 +1,6 @@
 var { SpecReporter } = require('jasmine-spec-reporter');
 
-var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+var HtmlScreenshotReporter = require('/Users/chris/node_modules/protractor-jasmine2-screenshot-reporter');
 var jasmineReporters = require('jasmine-reporters');
 
 var reportsDirectory = './reports';
