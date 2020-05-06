@@ -146,9 +146,9 @@ exports.config = {
 
     {
     'browserName': 'chrome',
-//    'goog:chromeOptions':{
-//        args: ["--headless", "--disable-gpu", "--window-size=800x600", "product-version"]
-//        },
+    'goog:chromeOptions':{
+        args: ["--headless", "--disable-gpu", "--window-size=800x600", "product-version", "--no-sandbox", "--disable-dev-shm-usage"]
+        },
 //    'browserVersion': '80.0',
     'maxInstances': '2',
     shardTestFiles: '2',
@@ -156,7 +156,7 @@ exports.config = {
     {
     'browserName': 'chrome',
     'goog:chromeOptions':{
-        args: ["--headless", "--disable-gpu", "--window-size=800x600", "product-version"]
+        args: ["--headless", "--disable-gpu", "--window-size=800x600", "product-version", "--no-sandbox", "--disable-dev-shm-usage"]
         },
     'maxInstances': '2',
     shardTestFiles: '2',
