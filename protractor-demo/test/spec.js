@@ -22,7 +22,7 @@ describe('slow calculator', function() {
       console.log("YOUL");
     });
 
-    it('should start out with an empty memory', function () {
+    it('BLAH BLAH BLAH should start out with an empty memory', function () {
       var memory =
           element.all(by.repeater('result in memory'));
 

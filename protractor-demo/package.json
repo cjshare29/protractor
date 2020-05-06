@@ -18,5 +18,8 @@
     "q": "1.0.0",
     "firefox-profile": "0.3.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0"
+  }
 }
