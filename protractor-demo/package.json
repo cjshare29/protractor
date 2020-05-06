@@ -12,7 +12,7 @@
     "url": "https://github.com/juliemr/protractor-demo"
   },
   "dependencies": {
-    "express": "~3.4.0",
+    "express": "~4.17.1",
     "protractor": "2.1.0",
     "mkdirp": "~0.3.5",
     "q": "1.0.0",
